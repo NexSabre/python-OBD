@@ -9,7 +9,7 @@ with open("README.md", "r") as readme:
 setup(
     name="obd",
     version="0.7.1",
-    description=("Serial module for handling live sensor data from a vehicle's OBD-II port"),
+    description="Serial module for handling live sensor data from a vehicle's OBD-II port",
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
@@ -30,5 +30,5 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     zip_safe=False,
-    install_requires=["pyserial==3.*", "pint==0.19.*"],
+    install_requires=["pyserial~=3.5", "pint~=0.20.1"],
 )
